@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Rupali Lohat | Creative Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-r">R</span>upali<span class="dot">.</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid">
+            <div class="hero-bg-img" style="background-image:url('assets/profile.jpeg');"></div>
+            <div class="hero-bg-img" style="background-image:url('assets/RUPALI.png');"></div>
+            <div class="hero-bg-img" style="background-image:url('assets/poster design/PSA_ADD/photoshop post malone.png');"></div>
+            <div class="hero-bg-img" style="background-image:url('https://img.youtube.com/vi/29V90TP_1t4/maxresdefault.jpg');"></div>
+            <div class="hero-bg-img" style="background-image:url('https://img.youtube.com/vi/BhuchHQlAtY/maxresdefault.jpg');"></div>
+            <div class="hero-bg-img" style="background-image:url('https://img.youtube.com/vi/deQknav971k/maxresdefault.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tag">— Welcome to my creative world</p>
+            <h1 class="hero-title">
+                <span class="word">Creative</span>
+                <span class="word highlight">Visual</span>
+                <span class="word">Storyteller</span>
+            </h1>
+            <p class="hero-subtitle">Crafting bold ideas through design, motion &amp; lens</p>
+            <a href="#about" class="hero-btn">
+                Explore My Work <i class="bi bi-arrow-down-circle"></i>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-photo">
+                <div class="photo-ring ring1"></div>
+                <div class="photo-ring ring2"></div>
+                <div class="photo-ring ring3"></div>
+                <div class="photo-wrapper">
+                    <img src="assets/profile.jpeg" alt="Rupali Lohat">
+                </div>
+                <div class="orbit">
+                    <span class="orbit-dot dot1"><i class="bi bi-camera-reels"></i></span>
+                    <span class="orbit-dot dot2"><i class="bi bi-palette"></i></span>
+                    <span class="orbit-dot dot3"><i class="bi bi-film"></i></span>
+                    <span class="orbit-dot dot4"><i class="bi bi-brush"></i></span>
+                </div>
+            </div>
+            <div class="about-info">
+                <p class="about-greet">Hello, I'm</p>
+                <h1 class="about-name">Rupali Lohat</h1>
+                <h3 class="about-title">
+                    <span>Graphic Designer</span><span class="sep">•</span>
+                    <span>Filmmaker</span><span class="sep">•</span>
+                    <span>Content Creator</span>
+                </h3>
+                <p class="about-desc">
+                    A passionate creative professional blending design, motion and storytelling
+                    to craft visuals that inspire. With expertise across branding, film production,
+                    UI/UX design and content creation — I turn ideas into compelling experiences.
+                </p>
+                <div class="about-buttons">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <p class="section-tag">— My Portfolio</p>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+        </div>
+
+        <!-- FILTER BAR -->
+        <div class="filter-bar" id="filterBar">
+            <button class="filter-btn active" data-filter="all"><i class="bi bi-grid-fill"></i> All</button>
+            <button class="filter-btn" data-filter="brand"><i class="bi bi-bookmark-star"></i> Brand Guidelines</button>
+            <button class="filter-btn" data-filter="video"><i class="bi bi-camera-video"></i> Videos & Motion</button>
+            <button class="filter-btn" data-filter="graphic"><i class="bi bi-palette-fill"></i> Graphic Design</button>
+            <button class="filter-btn" data-filter="uiux"><i class="bi bi-phone"></i> UI / UX</button>
+            <button class="filter-btn" data-filter="photo"><i class="bi bi-camera"></i> Photography</button>
+            <button class="filter-btn" data-filter="3d"><i class="bi bi-box"></i> 3D Modeling</button>
+        </div>
+
+        <!-- UNIFIED GRID -->
+        <div class="project-grid" id="projectGrid">
+
+            <!-- BRAND GUIDELINES -->
+            <div class="project-card" data-category="brand" data-pdf="assets/brand/brandguidelines_bever.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/brand/brandguidelines_bever.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Brand Guidelines</span>
+                    <h4>Bever</h4>
+                    <p>Premium boxing equipment brand identity — power, precision &amp; performance for combat sport enthusiasts.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="brand" data-pdf="assets/brand/final_ui_ux.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/brand/final_ui_ux.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Brand Guidelines</span>
+                    <h4>Naturcycle</h4>
+                    <p>Case study for a natural skincare cosmetic brand — exploring eco-conscious beauty &amp; minimalist identity.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="brand" data-pdf="assets/brand/Pawtection_Presentation_final.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/brand/Pawtection_Presentation_final.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Brand Guidelines</span>
+                    <h4>Pawtection</h4>
+                    <p>Animal protection mobile app concept — helping users shelter, report &amp; call help for hurt animals.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="brand" data-pdf="assets/brand/PITCH.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/brand/PITCH.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Brand Guidelines</span>
+                    <h4>Chevrolet Camping</h4>
+                    <p>Promotional pitch &amp; campaign strategy for Chevrolet </p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="brand" data-pdf="assets/brand/Rlense_brand identity.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/brand/Rlense_brand identity.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Brand Guidelines</span>
+                    <h4>Rlense</h4>
+                    <p>My personal brand identity — focused on photography, videography &amp; cinematography.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- VIDEOS -->
+            <div class="project-card" data-category="video" data-video="29V90TP_1t4">
+                <div class="card-thumb video-thumb">
+                    <img src="https://img.youtube.com/vi/29V90TP_1t4/hqdefault.jpg" alt="My Life Reel" loading="lazy">
+                    <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video &amp; Motion</span>
+                    <h4>My Life Reel</h4>
+                    <p>A personal cinematic video showcasing storytelling &amp; editing flow.</p>
+                    <span class="view-btn">Watch Video <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="video" data-video="ZxX1x4e2YJU">
+                <div class="card-thumb video-thumb">
+                    <img src="https://img.youtube.com/vi/ZxX1x4e2YJU/hqdefault.jpg" alt="VFX" loading="lazy">
+                    <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video &amp; Motion</span>
+                    <h4>VFX Showcase</h4>
+                    <p>After Effects VFX project demonstrating advanced visual effects skills.</p>
+                    <span class="view-btn">Watch Video <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="video" data-video="BhuchHQlAtY">
+                <div class="card-thumb video-thumb">
+                    <img src="https://img.youtube.com/vi/BhuchHQlAtY/hqdefault.jpg" alt="Toronto" loading="lazy">
+                    <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video &amp; Motion</span>
+                    <h4>Toronto Life</h4>
+                    <p>Exploring Toronto with creative typography &amp; masking edits.</p>
+                    <span class="view-btn">Watch Video <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="video" data-video="N1iYB3HWpcU">
+                <div class="card-thumb video-thumb">
+                    <img src="https://img.youtube.com/vi/N1iYB3HWpcU/hqdefault.jpg" alt="Kinetic" loading="lazy">
+                    <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video &amp; Motion</span>
+                    <h4>Kinetic Typography</h4>
+                    <p>Fight Club dialog brought to life through kinetic motion design.</p>
+                    <span class="view-btn">Watch Video <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="video" data-video="deQknav971k">
+                <div class="card-thumb video-thumb">
+                    <img src="https://img.youtube.com/vi/deQknav971k/hqdefault.jpg" alt="Givenchy" loading="lazy">
+                    <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video &amp; Motion</span>
+                    <h4>Givenchy Promo</h4>
+                    <p>Luxury brand promotional film featuring product storytelling.</p>
+                    <span class="view-btn">Watch Video <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="video" data-video="47jIuVQjwU8">
+                <div class="card-thumb video-thumb">
+                    <img src="https://img.youtube.com/vi/47jIuVQjwU8/hqdefault.jpg" alt="Solsip" loading="lazy">
+                    <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video &amp; Motion</span>
+                    <h4>Solsip Ad</h4>
+                    <p>Beverage brand promotional ad with advanced editing techniques.</p>
+                    <span class="view-btn">Watch Video <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="video" data-video="vzu93GcutBI">
+                <div class="card-thumb video-thumb">
+                    <img src="https://img.youtube.com/vi/vzu93GcutBI/hqdefault.jpg" alt="Demo Reel" loading="lazy">
+                    <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video &amp; Motion</span>
+                    <h4>Demo Reel</h4>
+                    <p>A compilation of my best work showcasing diverse creative skills.</p>
+                    <span class="view-btn">Watch Video <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="video" data-video="42j0uEBeUPQ">
+                <div class="card-thumb video-thumb">
+                    <img src="https://img.youtube.com/vi/42j0uEBeUPQ/hqdefault.jpg" alt="Rlense Intro" loading="lazy">
+                    <div class="play-btn"><i class="bi bi-play-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video &amp; Motion</span>
+                    <h4>Rlense Channel Intro</h4>
+                    <p>Introducing my YouTube channel Rlense — a journey into visual creativity.</p>
+                    <span class="view-btn">Watch Video <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- GRAPHIC DESIGN - MAGAZINE -->
+            <div class="project-card" data-category="graphic" data-pdf="assets/Magzine/Post malone_magazine.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/Magzine/Post malone_magazine.pdf">
+                    <div class="thumb-loader"><i class="bi bi-journal-richtext"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Magazine Design</span>
+                    <h4>Post Malone Magazine</h4>
+                    <p>Editorial magazine design dedicated to musician Post Malone — bold typography &amp; layout.</p>
+                    <span class="view-btn">View Magazine <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- GRAPHIC DESIGN - PSA -->
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/cancer awarness_1.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/cancer awarness_1.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">PSA Campaign</span>
+                    <h4>Cancer Awareness 1</h4>
+                    <p>PSA poster designed to spread awareness about cancer detection &amp; support.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-img="assets/poster design/PSA_ADD/cancer awarness.jpg">
+                <div class="card-thumb">
+                    <img src="assets/poster design/PSA_ADD/cancer awarness.jpg" alt="Cancer Awareness" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">PSA Campaign</span>
+                    <h4>Cancer Awareness</h4>
+                    <p>Powerful visual campaign raising awareness on cancer prevention.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/cancer awarness.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/cancer awarness.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">PSA Campaign</span>
+                    <h4>Cancer Awareness PDF</h4>
+                    <p>Print-ready cancer awareness campaign in PDF format.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/condom ad.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/condom ad.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Advertisement</span>
+                    <h4>Condom Ad</h4>
+                    <p>Bold &amp; creative ad design promoting safe sex awareness.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/condom awarnesspdf.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/condom awarnesspdf.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">PSA Campaign</span>
+                    <h4>Condom Awareness</h4>
+                    <p>Educational awareness poster series on safe practices.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/part one.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/part one.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Design Series</span>
+                    <h4>Part One</h4>
+                    <p>First part of a creative graphic series exploring concept &amp; layout.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/Graphic Design.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/Graphic Design.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Graphic Design</span>
+                    <h4>Graphic Design Project</h4>
+                    <p>A creative exploration of design principles &amp; visual hierarchy.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/MANIFESTO.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/MANIFESTO.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Editorial</span>
+                    <h4>Manifesto</h4>
+                    <p>A bold design manifesto exploring creative philosophy &amp; type.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-img="assets/poster design/PSA_ADD/photoshop post malone.png">
+                <div class="card-thumb">
+                    <img src="assets/poster design/PSA_ADD/photoshop post malone.png" alt="Post Malone" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Photoshop Art</span>
+                    <h4>Post Malone Edit</h4>
+                    <p>Photoshop composite artwork featuring Post Malone with creative effects.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/Poster_Template. rupali.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/Poster_Template. rupali.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Poster Design</span>
+                    <h4>Poster Template</h4>
+                    <p>Reusable poster template with modern layout &amp; type system.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-file="assets/poster design/PSA_ADD/Rupali_Ad Collage.psd">
+                <div class="card-thumb">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-image"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Photoshop File</span>
+                    <h4>Ad Collage (PSD)</h4>
+                    <p>Original Photoshop ad collage layered file — available for download.</p>
+                    <span class="view-btn">Download File <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/TYPOGRAPHY.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/TYPOGRAPHY.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Typography</span>
+                    <h4>Typography</h4>
+                    <p>Experimental typography exploration playing with form &amp; rhythm.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/PSA_ADD/UPDATED MANIFESTO DUE TODAY.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/PSA_ADD/UPDATED MANIFESTO DUE TODAY.pdf">
+                    <div class="thumb-loader"><i class="bi bi-file-earmark-pdf"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Editorial</span>
+                    <h4>Updated Manifesto</h4>
+                    <p>Updated edition of the design manifesto with refined visuals.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- GRAPHIC DESIGN - MUSIC -->
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/music cover poster/LYRICS poster-1.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/music cover poster/LYRICS poster-1.pdf">
+                    <div class="thumb-loader"><i class="bi bi-music-note-list"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Music Poster</span>
+                    <h4>Lyrics Poster</h4>
+                    <p>Typographic lyrics poster transforming song words into visual art.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/music cover poster/music poster final .pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/music cover poster/music poster final .pdf">
+                    <div class="thumb-loader"><i class="bi bi-music-note-beamed"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Music Poster</span>
+                    <h4>Music Poster</h4>
+                    <p>Final music-themed poster featuring vibrant composition &amp; rhythm.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="graphic" data-pdf="assets/poster design/music cover poster/spotify cover-1.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/poster design/music cover poster/spotify cover-1.pdf">
+                    <div class="thumb-loader"><i class="bi bi-spotify"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Music Cover</span>
+                    <h4>Spotify Cover</h4>
+                    <p>Custom Spotify cover artwork designed for streaming visual identity.</p>
+                    <span class="view-btn">View Project <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- UI / UX -->
+            <div class="project-card" data-category="uiux" data-pdf="assets/brand/final_ui_ux.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/brand/final_ui_ux.pdf">
+                    <div class="thumb-loader"><i class="bi bi-layout-text-window"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">UI / UX</span>
+                    <h4>Naturcycle Case Study</h4>
+                    <p>UX research, wireframing &amp; final UI for an eco skincare brand.</p>
+                    <span class="view-btn">View Case Study <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="uiux" data-pdf="assets/brand/Pawtection_Presentation_final.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/brand/Pawtection_Presentation_final.pdf">
+                    <div class="thumb-loader"><i class="bi bi-phone-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">UI / UX</span>
+                    <h4>Pawtection App</h4>
+                    <p>End-to-end UI/UX of an animal rescue mobile application.</p>
+                    <span class="view-btn">View App Design <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- PHOTOGRAPHY -->
+            <div class="project-card" data-category="photo" data-pdf="assets/brand/Rlense_brand identity.pdf">
+                <div class="card-thumb pdf-thumb" data-pdf-src="assets/brand/Rlense_brand identity.pdf">
+                    <div class="thumb-loader"><i class="bi bi-camera2"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Photography</span>
+                    <h4>Rlense Photography</h4>
+                    <p>My personal photography brand — capturing emotion, light &amp; untold stories.</p>
+                    <span class="view-btn">Explore Rlense <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- 3D MODELING -->
+            <div class="project-card" data-category="3d" data-file="assets/poster design/music cover poster/Project 3D-Vinyl_jacket Template.ai">
+                <div class="card-thumb">
+                    <div class="thumb-loader"><i class="bi bi-disc-fill"></i></div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">3D Modeling</span>
+                    <h4>3D Vinyl Jacket</h4>
+                    <p>A 3D vinyl jacket template exploring depth, texture &amp; product visualization.</p>
+                    <span class="view-btn">Download File <i class="bi bi-arrow-right"></i></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div class="empty-state" id="emptyState" style="display:none;">
+            <i class="bi bi-search"></i>
+            <p>No projects in this category yet.</p>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <p class="section-tag">— My Toolkit</p>
+            <h2 class="section-title">Software <span>Skills</span></h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card float1"><i class="bi bi-camera-reels-fill" style="color:#9999ff;"></i><h4>Premiere Pro</h4></div>
+            <div class="skill-card float2"><i class="bi bi-stars" style="color:#cf96fd;"></i><h4>After Effects</h4></div>
+            <div class="skill-card float3"><i class="bi bi-box-fill" style="color:#f5792a;"></i><h4>Blender</h4></div>
+            <div class="skill-card float1"><i class="bi bi-image-fill" style="color:#31a8ff;"></i><h4>Photoshop</h4></div>
+            <div class="skill-card float2"><i class="bi bi-pen-fill" style="color:#ff9a00;"></i><h4>Illustrator</h4></div>
+            <div class="skill-card float3"><i class="bi bi-file-richtext-fill" style="color:#f06;"></i><h4>InDesign</h4></div>
+            <div class="skill-card float1"><i class="bi bi-palette2" style="color:#00c4cc;"></i><h4>Canva</h4></div>
+            <div class="skill-card float2"><i class="bi bi-bezier2" style="color:#a259ff;"></i><h4>Figma</h4></div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <p class="section-tag">— Let's Connect</p>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="mailto:rupalilohat8595@gmail.com" class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                    <div>
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">rupalilohat8595@gmail.com</p>
+                    </div>
+                </a>
+                <a href="tel:+14374497570" class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                    <div>
+                        <p class="contact-label">Phone</p>
+                        <p class="contact-value">+1 (437) 449-7570</p>
+                    </div>
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/rupali_lohat/?locale=fr_CA&hl=el" target="_blank" rel="noopener" class="social-link">
+                    <i class="bi bi-instagram"></i><span>Instagram</span>
+                </a>
+                <a href="https://www.imdb.com/name/nm13742709/" target="_blank" rel="noopener" class="social-link">
+                    <i class="bi bi-film"></i><span>IMDb</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rupali-lohat-0b0694242/" target="_blank" rel="noopener" class="social-link">
+                    <i class="bi bi-linkedin"></i><span>LinkedIn</span>
+                </a>
+                <a href="https://www.youtube.com/@Rupali_Lohat" target="_blank" rel="noopener" class="social-link">
+                    <i class="bi bi-youtube"></i><span>YouTube</span>
+                </a>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>© 2025 Rupali Lohat — Designed &amp; Developed with <i class="bi bi-heart-fill"></i></p>
+        </footer>
+    </section>
+
+    <!-- ============ MODAL ============ -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal"><i class="bi bi-x-lg"></i></span>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
